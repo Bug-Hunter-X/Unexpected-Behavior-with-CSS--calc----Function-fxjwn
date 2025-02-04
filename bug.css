@@ -1,0 +1,3 @@
+The CSS property `calc()` is used to perform calculations within CSS, but sometimes it can lead to unexpected results if not used correctly.  For example, using `calc(100% - 10px)` to set the width of an element might not work as expected if the parent element's width is not explicitly defined or is itself dynamic.
+
+Another issue can occur with unit mixing.  For example, `calc(100px + 10%)` is invalid because it mixes pixel and percentage units incorrectly.  Additionally, there might be issues with operator precedence, where calculations are performed in an unintended order, leading to inaccurate results. Finally, using `calc()` within media queries can sometimes lead to unexpected layout behaviors if not carefully considered.
